@@ -11,7 +11,54 @@
     tools:context="com.example.mobilefinalproject.MainActivity">
 
     <TextView
+        android:id="@+id/counterText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"/>
+        android:text="Count: N/A"
+        android:textSize="30sp"/>
+    <TextView
+        android:id="@+id/DealtCardsText"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/counterText"
+        android:text="Cards that have been entered: N/A"
+        android:textSize="15sp"/>
+    <TextView
+        android:id="@+id/ButtonLabelText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/DealtCardsText"
+        android:text="Select Input Type:"
+        android:textSize="15sp"/>
+    <RadioButton
+        android:id="@+id/ManualInputSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonLabelText"
+        android:text="Manual"
+        android:textSize="15sp"
+        android:onClick="OnInputTypeSelected"/>
+    <RadioButton
+        android:id="@+id/VoiceInputSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ManualInputSetting"
+        android:text="Voice"
+        android:textSize="15sp"
+        android:onClick="OnInputTypeSelected"/>
+    <Button
+        android:id="@+id/AddCardButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/VoiceInputSetting"
+        android:text="Enter Card"
+        android:textSize="15sp"/>
+    <Button
+        android:id="@+id/ResetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/VoiceInputSetting"
+        android:layout_alignParentRight="true"
+        android:text="Reset"
+        android:textSize="15sp"/>
 </RelativeLayout>

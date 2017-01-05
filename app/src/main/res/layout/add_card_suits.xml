@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Choose the suit:"
+        android:textSize="40sp"
+        android:id="@+id/ChooseSuitText"
+        android:paddingBottom="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:text="Diamond"
+        android:textSize="40sp"
+        android:id="@+id/Diamond"
+        android:layout_below="@id/ChooseSuitText"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:text="Heart"
+        android:textSize="40sp"
+        android:id="@+id/Heart"
+        android:layout_below="@id/ChooseSuitText"
+        android:layout_alignParentRight="true"/>
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:text="Clove"
+        android:textSize="40sp"
+        android:id="@+id/Clove"
+        android:layout_below="@id/Diamond"
+        android:layout_alignParentLeft="true"/>
+
+    <Button
+        android:layout_width="190dp"
+        android:layout_height="200dp"
+        android:text="Spade"
+        android:textSize="40sp"
+        android:id="@+id/Spade"
+        android:layout_below="@id/Heart"
+        android:layout_alignParentRight="true"/>
+    <Button
+        android:layout_width = "190dp"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="20sp"
+        android:layout_below="@id/Clove"/>
+</RelativeLayout>
