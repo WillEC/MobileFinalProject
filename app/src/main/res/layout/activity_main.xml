@@ -11,7 +11,7 @@
     tools:context="com.example.mobilefinalproject.MainActivity">
 
     <TextView
-        android:id="@+id/counterText"
+        android:id="@+id/CounterText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Count: N/A"
@@ -20,7 +20,7 @@
         android:id="@+id/DealtCardsText"
         android:layout_width="match_parent"
         android:layout_height="300dp"
-        android:layout_below="@id/counterText"
+        android:layout_below="@id/CounterText"
         android:text="Cards that have been entered: N/A"
         android:textSize="15sp"/>
     <TextView
