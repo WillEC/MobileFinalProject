@@ -19,7 +19,7 @@
     <TextView
         android:id="@+id/DealtCardsText"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="100dp"
         android:layout_below="@id/CounterText"
         android:text="Cards that have been entered: N/A"
         android:textSize="15sp"/>

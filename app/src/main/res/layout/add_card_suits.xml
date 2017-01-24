@@ -56,6 +56,6 @@
         android:layout_height="wrap_content"
         android:text="Back"
         android:textSize="15sp"
-        android:id="@+id/BackButton"
+        android:id="@+id/BackSuiteButton"
         android:layout_below="@id/Clove"/>
 </RelativeLayout>
