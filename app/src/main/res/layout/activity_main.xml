@@ -30,34 +30,40 @@
         android:layout_below="@id/DealtCardsText"
         android:text="Select Input Type:"
         android:textSize="15sp"/>
-    <RadioButton
-        android:id="@+id/ManualInputSetting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ButtonLabelText"
-        android:text="Manual"
-        android:textSize="15sp"
-        android:onClick="OnInputTypeSelected"/>
-    <RadioButton
-        android:id="@+id/VoiceInputSetting"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/ManualInputSetting"
-        android:text="Voice"
-        android:textSize="15sp"
-        android:onClick="OnInputTypeSelected"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/InputTypeSelectGroup"
+                android:layout_below="@id/ButtonLabelText"
+                android:layout_alignParentLeft="true"
+                android:orientation="vertical">
+        <RadioButton
+            android:id="@+id/ManualInputSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ButtonLabelText"
+            android:text="Manual"
+            android:textSize="15sp"/>
+        <RadioButton
+            android:id="@+id/VoiceInputSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ManualInputSetting"
+            android:text="Voice"
+            android:textSize="15sp"/>
+    </RadioGroup>
     <Button
         android:id="@+id/AddCardButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/VoiceInputSetting"
+        android:layout_below="@id/InputTypeSelectGroup"
         android:text="Enter Card"
         android:textSize="15sp"/>
     <Button
         android:id="@+id/ResetButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/VoiceInputSetting"
+        android:layout_below="@+id/InputTypeSelectGroup"
         android:layout_alignParentRight="true"
         android:text="Reset"
         android:textSize="15sp"/>

@@ -1,61 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:paddingBottom="@dimen/activity_vertical_margin"
-                android:paddingLeft="@dimen/activity_horizontal_margin"
-                android:paddingRight="@dimen/activity_horizontal_margin"
-                android:paddingTop="@dimen/activity_vertical_margin">
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="fill_parent"
+             android:layout_height="fill_parent">
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Diamond"
+            android:textSize="30sp"
+            android:id="@+id/Diamond"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Choose the suit:"
-        android:textSize="40sp"
-        android:id="@+id/ChooseSuitText"
-        android:paddingBottom="30dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Heart"
+            android:textSize="30sp"
+            android:id="@+id/Heart"/>
+    </TableRow>
 
-    <Button
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:text="Diamond"
-        android:textSize="30sp"
-        android:id="@+id/Diamond"
-        android:layout_below="@id/ChooseSuitText"
-        android:layout_alignParentLeft="true"/>
 
-    <Button
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:text="Heart"
-        android:textSize="30sp"
-        android:id="@+id/Heart"
-        android:layout_below="@id/ChooseSuitText"
-        android:layout_alignParentRight="true"/>
-
-    <Button
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:text="Clove"
-        android:textSize="30sp"
-        android:id="@+id/Clove"
-        android:layout_below="@id/Diamond"
-        android:layout_alignParentLeft="true"/>
-    <Button
-        android:layout_width="175dp"
-        android:layout_height="175dp"
-        android:text="Spade"
-        android:textSize="30sp"
-        android:id="@+id/Spade"
-        android:layout_below="@id/Heart"
-        android:layout_alignParentRight="true"/>
-    <Button
-        android:layout_width = "wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Back"
-        android:textSize="15sp"
-        android:id="@+id/BackSuiteButton"
-        android:layout_below="@id/Clove"/>
-</RelativeLayout>
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Clove"
+            android:textSize="30sp"
+            android:id="@+id/Clove"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spade"
+            android:textSize="30sp"
+            android:id="@+id/Spade"/>
+    </TableRow>
+    <TableRow>
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <Button
+            android:layout_width = "wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:textSize="15sp"
+            android:id="@+id/BackSuiteButton"/>
+    </TableRow>
+</TableLayout>

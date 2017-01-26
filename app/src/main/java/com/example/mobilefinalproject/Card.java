@@ -6,19 +6,19 @@ import android.widget.Switch;
  * Created by William Chen on 1/24/2017.
  */
 public class Card {
-    char suite;
+    int suite;
     int value;
 
-    public Card(char s, int v){
+    public Card(int s, int v){
         suite = s;
         value = v;
     }
 
-    public char getSuite() {
+    public int getSuite() {
         return suite;
     }
 
-    public void setSuite(char suite) {
+    public void setSuite(int suite) {
         this.suite = suite;
     }
 
@@ -35,16 +35,16 @@ public class Card {
         String v = "";
 
         switch(suite){
-            case 'D':
+            case 0:
                 s = "diamond";
                 break;
-            case 'H':
+            case 1:
                 s = "heart";
                 break;
-            case 'C':
+            case 2:
                 s = "clove";
                 break;
-            case 'S':
+            case 3:
                 s = "spade";
                 break;
             default:
@@ -59,10 +59,10 @@ public class Card {
                 v = "Queen";
                 break;
             case 13:
-                s = "King";
+                v = "King";
                 break;
             default:
-                s = value + "";
+                v = value + "";
         }
 
         return v + " of " + s;

@@ -49,7 +49,7 @@ public class ManualAddCardSuits extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int suite = 0;
+                suite = 0;
                 Intent i = ManualAddCardNums.newIntent(ManualAddCardSuits.this);
                 startActivityForResult(i, REQUEST_CODE_NUM);
 
@@ -59,7 +59,7 @@ public class ManualAddCardSuits extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int suite = 1;
+                suite = 1;
                 Intent i = ManualAddCardNums.newIntent(ManualAddCardSuits.this);
                 startActivityForResult(i, REQUEST_CODE_NUM);
 
@@ -69,7 +69,7 @@ public class ManualAddCardSuits extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int suite = 2;
+                suite = 2;
                 Intent i = ManualAddCardNums.newIntent(ManualAddCardSuits.this);
                 startActivityForResult(i, REQUEST_CODE_NUM);
 
@@ -79,7 +79,7 @@ public class ManualAddCardSuits extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                int suite = 3;
+                suite = 3;
                 Intent i = ManualAddCardNums.newIntent(ManualAddCardSuits.this);
                 startActivityForResult(i, REQUEST_CODE_NUM);
 
