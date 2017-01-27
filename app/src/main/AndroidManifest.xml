@@ -19,6 +19,8 @@
         </activity>
         <activity android:name=".ManualAddCardNums">
         </activity>
+        <activity android:name=".VoiceAddCard">
+        </activity>
     </application>
 
 </manifest>

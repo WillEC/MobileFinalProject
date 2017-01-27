@@ -19,7 +19,7 @@ public class ManualAddCardSuits extends AppCompatActivity {
     private Button mSpadeButton;
     private Button mBackButton;
 
-    private static final int REQUEST_CODE_NUM = 0;
+    private static final int REQUEST_CODE_NUM = -1;
 
     public static Intent newIntent(Context packageContent){
         Intent i = new Intent(packageContent, ManualAddCardSuits.class);

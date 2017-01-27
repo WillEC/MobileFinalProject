@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private int mCurrCard = 0;
     private int mCount = 0;
     private Card[] cards = new Card[52];
-    private static final int REQUEST_CODE_CARD = 0;
+    private static final int REQUEST_CODE_CARD = -1;
 
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != -1){
@@ -74,7 +74,8 @@ public class MainActivity extends AppCompatActivity {
                     startActivityForResult(i, REQUEST_CODE_CARD);
                 }
                 else if(mVoiceSetting.isChecked()){
-
+                    Intent i = VoiceAddCard.newIntent(MainActivity.this);
+                    startActivityForResult(i, REQUEST_CODE_CARD);
                 }
                 else{
                     Toast.makeText(MainActivity.this, "Select Input Type", Toast.LENGTH_SHORT).show();
