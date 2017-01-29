@@ -20,9 +20,10 @@ public class MainActivity extends AppCompatActivity {
     private int mCurrCard = 0;
     private int mCount = 0;
     private Card[] cards = new Card[52];
-    private static final int REQUEST_CODE_CARD = -1;
+    private static final int REQUEST_CODE_CARD = 1;
 
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != -1){
             int value = (resultCode/4)+1;
             int suite = (resultCode%4);

@@ -42,7 +42,7 @@ public class Card {
                 s = "heart";
                 break;
             case 2:
-                s = "clove";
+                s = "club";
                 break;
             case 3:
                 s = "spade";
@@ -52,6 +52,9 @@ public class Card {
         }
 
         switch(value){
+            case 1:
+                v = "Ace";
+                break;
             case 11:
                 v = "Jack";
                 break;

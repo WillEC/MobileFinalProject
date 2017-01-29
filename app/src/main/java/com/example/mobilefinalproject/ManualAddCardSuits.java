@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 public class ManualAddCardSuits extends AppCompatActivity {
 
@@ -15,18 +16,19 @@ public class ManualAddCardSuits extends AppCompatActivity {
 
     private Button mDiamondButton;
     private Button mHeartButton;
-    private Button mCloveButton;
+    private Button mClubButton;
     private Button mSpadeButton;
     private Button mBackButton;
 
-    private static final int REQUEST_CODE_NUM = -1;
+    private static final int REQUEST_CODE_NUM = 1;
 
     public static Intent newIntent(Context packageContent){
         Intent i = new Intent(packageContent, ManualAddCardSuits.class);
         return i;
     }
 
-    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != -1) {
             value = resultCode;
             returnValue = (value*4)+suite;
@@ -41,7 +43,7 @@ public class ManualAddCardSuits extends AppCompatActivity {
         setContentView(R.layout.add_card_suits);
         mDiamondButton = (Button) findViewById(R.id.Diamond);
         mHeartButton = (Button) findViewById(R.id.Heart);
-        mCloveButton = (Button) findViewById(R.id.Clove);
+        mClubButton = (Button) findViewById(R.id.Club);
         mSpadeButton = (Button) findViewById(R.id.Spade);
         mBackButton = (Button) findViewById(R.id.BackSuiteButton);
 
@@ -65,7 +67,7 @@ public class ManualAddCardSuits extends AppCompatActivity {
 
             }
         });
-        mCloveButton.setOnClickListener(new View.OnClickListener() {
+        mClubButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 

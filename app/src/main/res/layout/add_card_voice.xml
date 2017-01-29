@@ -27,14 +27,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Did you say ___ ?"
+        android:text=" "
         android:textSize="20sp"
         android:id="@+id/ConfirmationText"
         android:paddingBottom="30dp"
         android:layout_below="@id/VoiceButton"
         android:layout_centerHorizontal="true"/>
     <Button
-        android:layout_width="175dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="Yes"
         android:textSize="20sp"
@@ -42,7 +42,7 @@
         android:layout_below="@id/ConfirmationText"
         android:layout_alignParentLeft="true"/>
     <Button
-        android:layout_width="175dp"
+        android:layout_width="150dp"
         android:layout_height="wrap_content"
         android:text="No"
         android:textSize="20sp"
