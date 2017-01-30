@@ -45,20 +45,21 @@ public class VoiceAddCard extends AppCompatActivity {
         else if (mResult.contains("spade")) mSuite = 3;
 
         if (mResult.contains("ace")) mNum = 0;
-        else if (mResult.contains("two") || mResult.contains("too") || mResult.contains("to")) mNum = 1;
-        else if (mResult.contains("three")) mNum = 2;
-        else if (mResult.contains("four") || mResult.contains("for")) mNum = 3;
-        else if (mResult.contains("five")) mNum = 4;
-        else if (mResult.contains("six")) mNum = 5;
-        else if (mResult.contains("seven")) mNum = 6;
-        else if (mResult.contains("eight") || mResult.contains("ate")) mNum = 7;
-        else if (mResult.contains("nine")) mNum = 8;
-        else if (mResult.contains("ten")) mNum = 9;
+        else if (mResult.contains("two") || mResult.contains("too") || mResult.contains("to") || mResult.contains("2")) mNum = 1;
+        else if (mResult.contains("three") || mResult.contains("3")) mNum = 2;
+        else if (mResult.contains("four") || mResult.contains("for") || mResult.contains("4")) mNum = 3;
+        else if (mResult.contains("five") || mResult.contains("5")) mNum = 4;
+        else if (mResult.contains("six") || mResult.contains("6")) mNum = 5;
+        else if (mResult.contains("seven") || mResult.contains("7")) mNum = 6;
+        else if (mResult.contains("eight") || mResult.contains("ate") || mResult.contains("8")) mNum = 7;
+        else if (mResult.contains("nine") || mResult.contains("9")) mNum = 8;
+        else if (mResult.contains("ten") || mResult.contains("10")) mNum = 9;
         else if (mResult.contains("jack")) mNum = 10;
         else if (mResult.contains("queen")) mNum = 11;
         else if (mResult.contains("king")) mNum = 12;
 
         if (mSuite != -1 && mNum != -1){
+            mListenButton.setEnabled(false);
             String s = "";
             String v = "";
 
@@ -142,6 +143,9 @@ public class VoiceAddCard extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 mConfirmationText.setText("");
+                mNum = -1;
+                mSuite = -1;
+                mListenButton.setEnabled(true);
             }
         });
         mBackButton.setOnClickListener(new View.OnClickListener() {
