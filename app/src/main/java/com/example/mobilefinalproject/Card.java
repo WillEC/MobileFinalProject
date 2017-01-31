@@ -5,9 +5,9 @@ import android.widget.Switch;
 /**
  * Created by William Chen on 1/24/2017.
  */
-public class Card {
-    int suite;
-    int value;
+public class Card extends Object{
+    private int suite;
+    private int value;
 
     public Card(int s, int v){
         suite = s;
@@ -69,5 +69,13 @@ public class Card {
         }
 
         return v + " of " + s;
+    }
+    public int CardToInt(){
+        return ((value-1)*4)+(suite-1);
+    }
+    public int compareTo(Card other){
+        if (other.getValue() == this.value && other.getSuite() == this.suite)
+            return 0;
+        else return -1;
     }
 }
